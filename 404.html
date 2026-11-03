@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            (function () {
+                try {
+                    var params = new URLSearchParams(window.location.search);
+                    var qTheme = params.get('theme');
+                    var theme = 'light';
+                    if (qTheme === 'light' || qTheme === 'dark') {
+                        theme = qTheme;
+                    } else {
+                        var t = localStorage.getItem('reflog-theme');
+                        if (t === 'dark' || t === 'light') {
+                            theme = t;
+                        } else {
+                            var match = document.cookie.match(/reflog-theme=(dark|light)/);
+                            if (match) {
+                                theme = match[1];
+                            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                                theme = 'dark';
+                            }
+                        }
+                    }
+                    document.documentElement.setAttribute('data-theme', theme);
+                } catch (e) {}
+            })();
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>404 Not Found | Reflog Labs</title>
+        <meta name="description" content="Reference not found. Return to Reflog Labs homepage." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Unbounded:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-36 -43 1280 1280'><style>path{fill:%232A2FD6}</style><path d='M 88.7 295.9 C 89.3 295.9 90 295.9 90.7 295.9 C 92.9 295.9 95.1 295.9 97.3 295.9 C 98.8 295.9 100.4 295.9 102 295.9 C 106.3 295.9 110.5 295.9 114.8 295.9 C 119.3 295.9 123.8 295.9 128.2 295.9 C 136.7 295.9 145.2 295.9 153.6 295.9 C 163.3 295.9 172.9 295.9 182.5 295.9 C 202.4 296 222.2 296 242 296 C 242 296.8 242 297.6 242 298.4 C 242.1 344.7 242.2 391.1 242.3 437.5 C 242.3 443.1 242.4 448.7 242.4 454.3 C 242.4 455.5 242.4 456.6 242.4 457.7 C 242.4 475.6 242.5 493.5 242.5 511.5 C 242.5 529.9 242.6 548.4 242.6 566.9 C 242.7 577.2 242.7 587.6 242.7 597.9 C 242.8 621.3 242.8 644.7 243 668.1 C 243 672.5 243 676.9 243 681.4 C 243.1 690.9 243.1 700.4 243.2 709.9 C 243.2 713.9 243.3 717.8 243.3 721.8 C 243.2 748.4 243.2 748.4 251.8 773.3 C 252.1 774 252.4 774.6 252.8 775.3 C 263.5 795.3 280.2 809.1 301.7 816.2 C 309.7 818.6 317.2 820.1 325.6 820.2 C 326.9 820.2 328.1 820.2 329.5 820.2 C 330.9 820.2 332.3 820.2 333.7 820.2 C 335.1 820.2 336.6 820.2 338.1 820.2 C 342.1 820.3 346.2 820.3 350.2 820.3 C 354.4 820.3 358.6 820.4 362.8 820.4 C 370.8 820.4 378.8 820.5 386.8 820.5 C 395.8 820.6 404.9 820.6 414 820.7 C 432.7 820.8 451.3 820.9 470 821 C 470.1 868.5 470.2 915.9 470.2 963.4 C 470.2 969 470.2 974.6 470.2 980.2 C 470.2 981.3 470.2 982.4 470.2 983.6 C 470.2 1001.6 470.3 1019.7 470.3 1037.7 C 470.3 1056.3 470.4 1074.8 470.4 1093.3 C 470.4 1104.8 470.4 1116.2 470.4 1127.7 C 470.5 1135.5 470.5 1143.3 470.5 1151.2 C 470.5 1155.7 470.5 1160.2 470.5 1164.8 C 470.5 1168.9 470.5 1173 470.5 1177.2 C 470.5 1178.7 470.5 1180.2 470.5 1181.7 C 470.6 1194.2 468.6 1204.1 460.3 1213.8 C 451.4 1222.5 440.4 1225.5 428.3 1225.4 C 427.2 1225.4 426.2 1225.4 425.1 1225.4 C 421.6 1225.4 418.1 1225.4 414.6 1225.4 C 412.1 1225.4 409.6 1225.4 407.1 1225.4 C 401 1225.4 394.9 1225.4 388.8 1225.4 C 383.9 1225.4 378.9 1225.4 373.9 1225.4 C 372.9 1225.4 372.9 1225.4 371.8 1225.4 C 370.4 1225.4 368.9 1225.4 367.5 1225.4 C 354 1225.4 340.5 1225.4 327 1225.4 C 315.5 1225.4 303.9 1225.4 292.4 1225.4 C 279 1225.4 265.5 1225.4 252.1 1225.4 C 250.7 1225.4 249.2 1225.4 247.8 1225.4 C 247.1 1225.4 246.4 1225.4 245.7 1225.4 C 240.7 1225.4 235.8 1225.4 230.8 1225.4 C 224.1 1225.4 217.5 1225.4 210.8 1225.4 C 208.3 1225.4 205.9 1225.4 203.5 1225.4 C 184.2 1225.4 165.1 1224.6 146.6 1218.8 C 145.1 1218.3 145.1 1218.3 143.6 1217.8 C 123.7 1211.6 105.6 1201.9 90 1188 C 89.1 1187.2 88.3 1186.5 87.4 1185.7 C 64.7 1165.6 48.6 1140.2 41.1 1110.8 C 40.9 1110.1 40.7 1109.3 40.5 1108.6 C 36.5 1091.6 36.7 1074.6 36.7 1057.2 C 36.7 1053.4 36.7 1049.6 36.7 1045.8 C 36.7 1039.2 36.7 1032.6 36.7 1025.9 C 36.7 1016.1 36.7 1006.2 36.7 996.3 C 36.7 977.7 36.7 959 36.7 940.3 C 36.7 925.9 36.7 911.5 36.7 897.1 C 36.7 895 36.7 893 36.7 890.9 C 36.7 887.8 36.7 884.7 36.7 881.5 C 36.7 852.5 36.7 823.5 36.7 794.5 C 36.7 793.4 36.7 792.3 36.7 791.2 C 36.7 785.7 36.7 780.1 36.7 774.6 C 36.7 773.5 36.7 772.4 36.7 771.3 C 36.7 769 36.7 766.8 36.7 764.6 C 36.7 730 36.7 695.3 36.7 660.7 C 36.6 621.8 36.6 582.8 36.6 543.9 C 36.6 539.8 36.6 535.6 36.6 531.5 C 36.6 530.5 36.6 529.4 36.6 528.4 C 36.6 513 36.6 497.5 36.6 482.1 C 36.6 464.6 36.6 447 36.6 429.5 C 36.6 419.7 36.6 409.9 36.6 400.1 C 36.6 393.5 36.6 387 36.6 380.4 C 36.6 376.7 36.6 372.9 36.6 369.2 C 36.6 365.2 36.6 361.2 36.6 357.1 C 36.6 356 36.6 354.8 36.6 353.6 C 36.7 336.7 41.8 322.1 53.9 310.1 C 64 300.9 74.9 295.9 88.7 295.9 Z'/></svg>"
+            id="favicon-link"
+        />
+        <style>
+            :root {
+                --ground: #f5f7fa;
+                --surface: #ffffff;
+                --ink: #0e1030;
+                --muted: #5a6578;
+                --border: #0e1030;
+                --shadow: #0e1030;
+                --accent: #2a2fd6;
+                --codebg: #0e1030;
+                --codeink: #f5f7fa;
+                --font-display: 'Unbounded', system-ui, sans-serif;
+                --font-mono: 'DM Mono', monospace;
+            }
+            [data-theme='dark'] {
+                --ground: #0b1016;
+                --surface: #111922;
+                --ink: #e6edf3;
+                --muted: #8b949e;
+                --border: #26323f;
+                --shadow: #000000;
+                --accent: #a3e635;
+                --codebg: #05080c;
+                --codeink: #a3e635;
+            }
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: var(--ground);
+                color: var(--ink);
+                font-family: var(--font-mono);
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+            }
+            .error-card {
+                background: var(--surface);
+                border: 2px solid var(--border);
+                box-shadow: 6px 6px 0 var(--shadow);
+                max-width: 620px;
+                width: 100%;
+                padding: 36px 32px;
+            }
+            .error-header {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 20px;
+            }
+            .error-tag {
+                font-size: 13px;
+                color: var(--accent);
+                font-weight: 500;
+                letter-spacing: 0.05em;
+            }
+            .error-title {
+                font-family: var(--font-display);
+                font-size: 32px;
+                line-height: 1.2;
+                margin-bottom: 16px;
+            }
+            .terminal-box {
+                background: var(--codebg);
+                color: var(--codeink);
+                border: 1px solid var(--border);
+                padding: 16px;
+                font-size: 14px;
+                line-height: 1.6;
+                margin: 20px 0;
+            }
+            .terminal-box .cmd {
+                color: #ffffff;
+            }
+            .terminal-box .err {
+                color: #ef4444;
+            }
+            .error-desc {
+                font-size: 14px;
+                color: var(--muted);
+                line-height: 1.6;
+                margin-bottom: 24px;
+            }
+            .btn-home {
+                display: inline-block;
+                background: var(--accent);
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 14px;
+                padding: 12px 24px;
+                border: 2px solid var(--border);
+                box-shadow: 3px 3px 0 var(--shadow);
+                transition: transform 0.1s ease, box-shadow 0.1s ease;
+            }
+            [data-theme='dark'] .btn-home {
+                color: #0b1016;
+            }
+            .btn-home:hover {
+                transform: translate(-1px, -1px);
+                box-shadow: 4px 4px 0 var(--shadow);
+            }
+        </style>
+    </head>
+    <body>
+        <main class="error-card">
+            <div class="error-header">
+                <span class="error-tag">// 404 NOT FOUND</span>
+            </div>
+            <h1 class="error-title">Reference Not Found</h1>
+            <p class="error-desc">
+                The ref or page you requested does not exist in this tree.
+            </p>
+            <div class="terminal-box">
+                <span class="cmd">$ git checkout HEAD@{404}</span><br />
+                <span class="err">fatal: reference not found: HEAD@{404}</span><br />
+                <span>error: pathspec did not match any file(s) known to git</span>
+            </div>
+            <a href="/" class="btn-home">Return to Homepage</a>
+        </main>
+    </body>
+</html>
