@@ -1,5 +1,11 @@
 <div align="center">
-  <img src="og.png" alt="Reflog Labs Official Website Repository" width="100%">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/og-dark.png#gh-dark-mode-only">
+  <source media="(prefers-color-scheme: light)" srcset="assets/og-light.png#gh-light-mode-only">
+  <img src="assets/og-light.png#gh-light-mode-only" alt="Reflog Labs Official Website Repository" width="100%">
+</picture>
+
 </div>
 
 <br>
@@ -13,8 +19,9 @@ The production front-end repository powering [refloglabs.github.io](https://refl
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/preview-hero-dark.png">
-  <img src="assets/preview-hero-light.png" alt="Reflog Labs Platform Interface" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/preview-hero-dark.png#gh-dark-mode-only">
+  <source media="(prefers-color-scheme: light)" srcset="assets/preview-hero-light.png#gh-light-mode-only">
+  <img src="assets/preview-hero-light.png#gh-light-mode-only" alt="Reflog Labs Platform Interface" width="100%">
 </picture>
 
 </div>
@@ -52,7 +59,13 @@ Reflog Labs teaches Git mechanics and production engineering workflows through s
 ## Interactive Curriculum Platform
 
 <div align="center">
-  <img src="assets/preview-curriculum.png" alt="Dynamic Curriculum Cards" width="100%">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/preview-curriculum-dark.png#gh-dark-mode-only">
+  <source media="(prefers-color-scheme: light)" srcset="assets/preview-curriculum-light.png#gh-light-mode-only">
+  <img src="assets/preview-curriculum-light.png#gh-light-mode-only" alt="Dynamic Curriculum Cards" width="100%">
+</picture>
+
 </div>
 
 <br>
@@ -79,19 +92,22 @@ Reflog Labs teaches Git mechanics and production engineering workflows through s
 refloglabs.github.io/
 |-- .github/
 |   \-- workflows/
-|       \-- deploy.yml       # Production GitHub Pages deployment pipeline
+|       \-- deploy.yml                  # Production GitHub Pages deployment pipeline
 |-- assets/
-|   |-- logo.svg             # Canonical vector brand mark
-|   |-- preview-hero-dark.png
-|   |-- preview-hero-light.png
-|   \-- preview-curriculum.png
-|-- .gitignore               # Local artifacts and editor exclusion rules
-|-- .nojekyll                # Bypasses Jekyll processing on GitHub Pages
-|-- index.html               # Main application entry point
-|-- 404.html                 # Branded 404 page
-|-- og.png                   # Open Graph social card preview (1200x630)
-|-- LICENSE                  # Open source license
-\-- README.md                # Repository documentation
+|   |-- logo.svg                        # Canonical vector brand mark
+|   |-- og-dark.png                     # Dark theme social banner
+|   |-- og-light.png                    # Light theme social banner
+|   |-- preview-hero-dark.png           # Dark mode hero screenshot
+|   |-- preview-hero-light.png          # Light mode hero screenshot
+|   |-- preview-curriculum-dark.png     # Dark mode curriculum grid screenshot
+|   \-- preview-curriculum-light.png    # Light mode curriculum grid screenshot
+|-- .gitignore                          # Local artifacts and editor exclusion rules
+|-- .nojekyll                           # Bypasses Jekyll processing on GitHub Pages
+|-- index.html                          # Main application entry point
+|-- 404.html                            # Branded 404 page
+|-- og.png                              # Open Graph fallback banner (1200x630)
+|-- LICENSE                             # Open source license
+\-- README.md                           # Repository documentation
 ```
 
 ---
