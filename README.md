@@ -1,11 +1,6 @@
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/og-dark.png#gh-dark-mode-only">
-  <source media="(prefers-color-scheme: light)" srcset="assets/og-light.png#gh-light-mode-only">
   <img src="assets/og-light.png#gh-light-mode-only" alt="Reflog Labs Official Website Repository" width="100%">
-</picture>
-
+  <img src="assets/og-dark.png#gh-dark-mode-only" alt="Reflog Labs Official Website Repository" width="100%">
 </div>
 
 <br>
@@ -17,13 +12,8 @@ The production front-end repository powering [refloglabs.github.io](https://refl
 ## Visual Preview
 
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/preview-hero-dark.png#gh-dark-mode-only">
-  <source media="(prefers-color-scheme: light)" srcset="assets/preview-hero-light.png#gh-light-mode-only">
   <img src="assets/preview-hero-light.png#gh-light-mode-only" alt="Reflog Labs Platform Interface" width="100%">
-</picture>
-
+  <img src="assets/preview-hero-dark.png#gh-dark-mode-only" alt="Reflog Labs Platform Interface" width="100%">
 </div>
 
 <br>
@@ -59,13 +49,8 @@ Reflog Labs teaches Git mechanics and production engineering workflows through s
 ## Interactive Curriculum Platform
 
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/preview-curriculum-dark.png#gh-dark-mode-only">
-  <source media="(prefers-color-scheme: light)" srcset="assets/preview-curriculum-light.png#gh-light-mode-only">
   <img src="assets/preview-curriculum-light.png#gh-light-mode-only" alt="Dynamic Curriculum Cards" width="100%">
-</picture>
-
+  <img src="assets/preview-curriculum-dark.png#gh-dark-mode-only" alt="Dynamic Curriculum Cards" width="100%">
 </div>
 
 <br>
