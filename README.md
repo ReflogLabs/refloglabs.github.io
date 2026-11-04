@@ -30,6 +30,21 @@ npx http-server . -p 8000
 
 Open `http://localhost:8000` in your browser.
 
+## Testing and Mock Parameters
+
+To run contract checks and verify DOM behaviors without making unauthenticated GitHub API calls, use Node.js and JSDOM:
+
+```bash
+# Inspect DOM states or run headless assertions with jsdom
+npm install --no-save jsdom
+```
+
+The site supports development query parameters:
+- `?mock=none`: Simulates zero public repositories (all lab cards locked).
+- `?mock=01,02,04`: Unlocks cards 01, 02, and 04.
+- `?mock=all`: Unlocks all lab cards.
+- `?mock=offline`: Simulates an API network failure to verify error handling.
+
 ## Deployment
 
 Pushes to the `main` branch trigger the GitHub Actions workflow in `.github/workflows/deploy.yml`, which bundles the production site into a `_site` directory and deploys it directly to GitHub Pages.
