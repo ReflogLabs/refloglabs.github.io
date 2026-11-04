@@ -49,16 +49,10 @@ Reflog Labs teaches Git mechanics and production engineering workflows through s
 
 ---
 
-## Interactive Curriculum and Terminal Experience
+## Interactive Curriculum Platform
 
 <div align="center">
   <img src="assets/preview-curriculum.png" alt="Dynamic Curriculum Cards" width="100%">
-</div>
-
-<br>
-
-<div align="center">
-  <img src="assets/preview-terminal.png" alt="Interactive Recovery Terminal" width="100%">
 </div>
 
 <br>
@@ -90,8 +84,7 @@ refloglabs.github.io/
 |   |-- logo.svg             # Canonical vector brand mark
 |   |-- preview-hero-dark.png
 |   |-- preview-hero-light.png
-|   |-- preview-curriculum.png
-|   \-- preview-terminal.png
+|   \-- preview-curriculum.png
 |-- .gitignore               # Local artifacts and editor exclusion rules
 |-- .nojekyll                # Bypasses Jekyll processing on GitHub Pages
 |-- index.html               # Main application entry point
