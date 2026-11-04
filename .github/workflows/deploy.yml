@@ -24,29 +24,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Verify required files exist
-        run: |
-          for required_file in index.html 404.html og.png assets/logo.svg; do
-            if [ ! -f "$required_file" ]; then
-              echo "Error: Required deployment asset $required_file is missing!" >&2
-              exit 1
-            fi
-          done
-          echo "All required deployment files verified."
-
-      - name: Stage site
-        run: |
-          mkdir -p _site
-          cp index.html 404.html og.png .nojekyll _site/
-          cp -r assets _site/
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
