@@ -1,12 +1,25 @@
-# Reflog Labs Website
-
 <div align="center">
-  <img src="og.png" alt="Reflog Labs Platform Preview" width="100%" style="border-radius: 8px;">
+  <img src="og.png" alt="Reflog Labs Official Website Repository" width="100%">
 </div>
 
 <br>
 
-The production front-end repository powering [refloglabs.github.io](https://refloglabs.github.io), the curriculum hub for Reflog Labs.
+The production front-end repository powering [refloglabs.github.io](https://refloglabs.github.io), the interactive curriculum hub for Reflog Labs.
+
+---
+
+## Visual Preview
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/preview-hero-dark.png">
+  <img src="assets/preview-hero-light.png" alt="Reflog Labs Platform Interface" width="100%">
+</picture>
+
+</div>
+
+<br>
 
 ---
 
@@ -36,6 +49,22 @@ Reflog Labs teaches Git mechanics and production engineering workflows through s
 
 ---
 
+## Interactive Curriculum and Terminal Experience
+
+<div align="center">
+  <img src="assets/preview-curriculum.png" alt="Dynamic Curriculum Cards" width="100%">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="assets/preview-terminal.png" alt="Interactive Recovery Terminal" width="100%">
+</div>
+
+<br>
+
+---
+
 ## Design System Tokens
 
 | Semantic Token | Light Mode | Dark Mode | Usage |
@@ -58,7 +87,11 @@ refloglabs.github.io/
 |   \-- workflows/
 |       \-- deploy.yml       # Production GitHub Pages deployment pipeline
 |-- assets/
-|   \-- logo.svg             # Canonical vector brand mark
+|   |-- logo.svg             # Canonical vector brand mark
+|   |-- preview-hero-dark.png
+|   |-- preview-hero-light.png
+|   |-- preview-curriculum.png
+|   \-- preview-terminal.png
 |-- .gitignore               # Local artifacts and editor exclusion rules
 |-- .nojekyll                # Bypasses Jekyll processing on GitHub Pages
 |-- index.html               # Main application entry point
@@ -96,15 +129,6 @@ The client-side API engine supports deterministic test query parameters, enablin
 | `?mock=01,02,04` | Selective unlock | Cards 01, 02, and 04 unlock dynamically; others remain locked. |
 | `?mock=all` | Complete catalog | Unlocks all curriculum cards across all tracks. |
 | `?mock=offline` | Network partition | Simulates HTTP failure; displays non-blocking warning notification. |
-
-### Headless Contract Verification
-
-Automated DOM assertions can be executed in headless environments using Node.js and JSDOM:
-
-```bash
-# Verify script evaluation and query parameter state changes
-node test_mock_params.js
-```
 
 ---
 
